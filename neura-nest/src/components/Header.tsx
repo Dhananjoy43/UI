@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 
+import { Button } from "@/components/ui/button"
 import {
   MobileNav,
   MobileNavHeader,
@@ -13,8 +14,6 @@ import {
   NavBody,
   NavItems,
 } from "@/components/ui/resizable-navbar"
-
-import { Button } from "./ui/button"
 
 const NAV_LINKS = [
   {
