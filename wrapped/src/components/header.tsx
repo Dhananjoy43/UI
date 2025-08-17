@@ -19,7 +19,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Image src={"/logo.svg"} height={30} width={120} alt="logo" />
 
-        <nav aria-label="Main navigation" className="hidden md:flex">
+        <nav aria-label="Main navigation" className="hidden lg:flex">
           <ul className="flex items-center space-x-8">
             {NAV_MENUS.map((menu) => (
               <li key={menu.name}>
@@ -33,13 +33,13 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-
         <Button
           asChild
-          className="hidden rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-700 hover:to-pink-700 hover:shadow-xl md:block"
+          className="hidden rounded-lg bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-2 font-medium text-white shadow-lg transition-all duration-300 hover:from-purple-700 hover:to-pink-700 hover:shadow-xl lg:block"
         >
           <Link href="/free-trial">Get Free Trial</Link>
         </Button>
+
         <MobileNavSheet nav_menus={NAV_MENUS} />
       </div>
     </header>

@@ -64,7 +64,7 @@ export default function ReviewsSection() {
       as="section"
       id="reviews"
       aria-labelledby="reviews-title"
-      className="gap-6 bg-white py-20"
+      className="gap-6 px-0 py-20 sm:px-0"
     >
       <MainHeading
         icon={Star}
@@ -77,7 +77,7 @@ export default function ReviewsSection() {
       <Motion
         animation="fade"
         delay={0.6}
-        className="grid w-full gap-4 md:grid-cols-2 lg:grid-cols-3"
+        className="grid w-full gap-4 px-0 md:grid-cols-2 lg:grid-cols-3"
       >
         {reviews.map((review, index) => (
           <Motion
@@ -87,8 +87,9 @@ export default function ReviewsSection() {
             delay={0.15 * (index + 1)} // Staggered delay: 0.2s, 0.4s, 0.6s, etc.
             scrollTrigger={true}
             scrollThreshold={0.1}
+            className="w-full"
           >
-            <Card className="rounded-2xl border-0 bg-gradient-to-br from-purple-50 to-pink-50 p-6 shadow-xs shadow-rose-500/10 transition-shadow duration-300 hover:shadow-lg">
+            <Card className="h-full w-full rounded-2xl border-0 bg-gradient-to-br from-purple-50 to-pink-50 p-6 shadow-xs shadow-rose-500/10 transition-shadow duration-300 hover:shadow-lg">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Avatar>

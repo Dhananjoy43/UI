@@ -10,13 +10,13 @@ export default function FinalCTA() {
   return (
     <MaxWidthWrapper
       as="section"
-      className="mx-4 mb-8 flex-col overflow-hidden rounded-3xl bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 p-0 md:mx-auto md:mb-16 md:flex-row lg:pr-0"
+      className="mb-8 flex-col overflow-hidden rounded-3xl bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 p-0 md:mb-16 md:flex-row md:pr-0 lg:pr-0"
     >
       <Motion
         animation="slideLeft"
         duration={0.8}
         delay={0.4}
-        className="w-full space-y-4 p-4 md:w-1/2 md:p-12 lg:p-16"
+        className="w-full space-y-4 p-4 md:w-2/3 md:p-6 lg:w-1/2 lg:p-16"
       >
         <Heading as="h3" weight="bold">
           Take Control of Your <br />
@@ -38,14 +38,14 @@ export default function FinalCTA() {
         animation="slideRight"
         duration={0.8}
         delay={0.6}
-        className="relative h-80 w-full md:h-[32rem] md:w-1/2"
+        className="relative h-80 w-full sm:h-[24rem] md:h-[20rem] md:w-1/3 lg:h-[24rem] lg:w-1/2"
       >
         <Image
           src={"/images/cards.png"}
           fill
           alt="Final CTA Image"
           sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover"
+          className="h-auto w-full object-cover"
         />
       </Motion>
     </MaxWidthWrapper>

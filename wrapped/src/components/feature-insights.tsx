@@ -10,11 +10,15 @@ import { Paragraph } from "@/components/typography/paragraph"
 
 export default function FeatureInsights() {
   return (
-    <MaxWidthWrapper as="section" aria-labelledby="feature-insights-heading">
-      <div className="mx-auto max-w-7xl rounded-4xl bg-gradient-to-r from-purple-50 to-pink-50 p-2 md:p-6">
+    <MaxWidthWrapper
+      as="section"
+      aria-labelledby="feature-insights-heading"
+      className="p-0"
+    >
+      <div className="mx-auto w-full rounded-4xl bg-gradient-to-r from-purple-50 to-pink-50 p-2 md:p-6">
         <Card className="overflow-hidden rounded-3xl border-0 p-0 shadow-2xl">
           <div className="p-4 md:px-12 lg:px-16 lg:pr-0">
-            <div className="grid items-center md:gap-12 lg:grid-cols-2">
+            <div className="grid items-center lg:grid-cols-2 lg:gap-12">
               <div className="space-y-2 md:space-y-4">
                 <Motion
                   animation="slideLeft"

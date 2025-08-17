@@ -25,7 +25,7 @@ export const MaxWidthWrapper = <T extends ElementType = "div">({
   return (
     <Component
       className={cn(
-        "mx-auto flex max-w-6xl flex-col items-center justify-center px-4 sm:px-6 lg:px-8",
+        "mx-4 flex max-w-6xl flex-col items-center justify-center px-4 sm:px-6 lg:mx-auto",
         className
       )}
       {...props}

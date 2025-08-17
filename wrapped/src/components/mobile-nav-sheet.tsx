@@ -19,8 +19,8 @@ const MobileNavSheet = ({
 }) => {
   return (
     <Sheet>
-      <SheetTrigger asChild className="md:hidden">
-        <Button variant="ghost" size="icon">
+      <SheetTrigger asChild className="lg:hidden">
+        <Button variant="outline" size="icon" aria-label="Open navigation menu">
           <IconMenu4 />
         </Button>
       </SheetTrigger>

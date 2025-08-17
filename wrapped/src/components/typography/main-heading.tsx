@@ -53,7 +53,7 @@ export const MainHeading = ({
         delay={0.2}
         className="font-oswald text-center text-3xl font-bold md:text-4xl xl:text-5xl"
       >
-        <Heading as="h2" className={cn(className)} {...props}>
+        <Heading as="h2" className={cn(className, "text-center")} {...props}>
           {title}
           {gradientText && (
             <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">

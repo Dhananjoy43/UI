@@ -10,17 +10,17 @@ import { Paragraph } from "@/components/typography/paragraph"
 
 export default function FeatureAnalysis() {
   return (
-    <MaxWidthWrapper as="section">
+    <MaxWidthWrapper as="section" className="p-0">
       <div className="mx-auto max-w-7xl rounded-4xl bg-gradient-to-r from-purple-50 to-pink-50 p-2 md:p-6">
         <Card className="overflow-hidden rounded-4xl border-0 bg-white/80 p-0 shadow-sm backdrop-blur-sm">
           <div className="p-4 md:px-12 lg:px-16 lg:pr-0">
-            <div className="grid items-center md:gap-12 lg:grid-cols-2">
+            <div className="grid items-center lg:grid-cols-2 lg:gap-12">
               <div className="space-y-2 md:space-y-4">
                 <Motion
                   animation="slideLeft"
                   duration={0.8}
                   delay={0.1}
-                  className="inline-flex items-center space-x-2 rounded-full bg-white/60 px-2 py-2 backdrop-blur-sm"
+                  className="inline-flex items-center space-x-2 rounded-full bg-white/60 py-2 backdrop-blur-sm md:px-2"
                 >
                   <TrendingUp className="h-4 w-4 text-purple-600" />
                   <span className="text-sm font-medium text-purple-700">
@@ -28,9 +28,7 @@ export default function FeatureAnalysis() {
                   </span>
                 </Motion>
                 <Motion animation="slideLeft" duration={0.8} delay={0.2}>
-                  <Heading as="h2">
-                    Real-Time <br /> Spending Analysis
-                  </Heading>
+                  <Heading as="h2">Real-Time Spending Analysis</Heading>
                 </Motion>
                 <Motion animation="slideLeft" duration={0.8} delay={0.4}>
                   <Paragraph>
